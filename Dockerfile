@@ -12,4 +12,6 @@ WORKDIR /data
 
 ENTRYPOINT ["/terraform/terraform"]
 
+ADD /etc/ssl/certs /etc/ssl/certs
+
 CMD ["--help"]
